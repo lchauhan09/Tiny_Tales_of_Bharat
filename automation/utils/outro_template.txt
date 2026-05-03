@@ -1,0 +1,19 @@
+# OUTRO TEMPLATE — Tiny Tales of Bharat
+
+[OUTRO VISUAL]
+Warm background with soft sparkles.
+Text card appears:
+"Moral of the Story"
+
+[OUTRO MORAL SLOT]
+<< Insert episode moral here >>
+
+[OUTRO NARRATION]
+Narrator:
+"Thank you for watching Tiny Tales of Bharat."
+
+Narrator:
+"Join us again for another magical story from the heart of India."
+
+[OUTRO MUSIC]
+Soft flute fade-out (8–10 seconds).

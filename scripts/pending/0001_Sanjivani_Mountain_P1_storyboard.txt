@@ -1,0 +1,93 @@
+# STORYBOARD — Episode 0001: Sanjivani Mountain (Part 1)
+# Character: Hanuman
+# Visual Theme: Mountain Night
+
+[INTRO — SHOT 1]
+Description:
+Wide shot of a calm night sky with soft moonlight. The battlefield is quiet. Rama kneels beside Lakshmana, looking worried.
+
+Camera:
+Slow zoom-in from wide to medium.
+
+Mood:
+Calm, emotional, hopeful.
+
+[SCENE 1 — SHOT 2]
+Description:
+Close-up of Lakshmana unconscious on the ground. Rama gently holds his hand.
+
+Camera:
+Static close-up.
+
+Mood:
+Concern, tenderness.
+
+[SCENE 1 — SHOT 3]
+Description:
+Hanuman steps forward confidently, chest out, eyes determined.
+
+Camera:
+Low-angle hero shot.
+
+Mood:
+Courage, responsibility.
+
+[SCENE 1 — SHOT 4]
+Description:
+Hanuman grows in size and leaps into the sky, leaving a dust cloud behind.
+
+Camera:
+Tracking shot upward.
+
+Mood:
+Epic, powerful.
+
+[SCENE 2 — SHOT 5]
+Description:
+Hanuman flying across the night sky, moon behind him, clouds rushing past.
+
+Camera:
+Side profile tracking.
+
+Mood:
+Speed, urgency.
+
+[SCENE 2 — SHOT 6]
+Description:
+Hanuman lands on the glowing mountain filled with herbs. Many plants shine in different colors.
+
+Camera:
+Wide establishing shot.
+
+Mood:
+Mystical, magical.
+
+[SCENE 2 — SHOT 7]
+Description:
+Hanuman looks confused at the glowing herbs, then smiles with an idea.
+
+Camera:
+Medium shot.
+
+Mood:
+Problem-solving, cleverness.
+
+[SCENE 2 — SHOT 8]
+Description:
+Hanuman lifts the entire mountain above his head under the starry sky.
+
+Camera:
+Low-angle dramatic shot.
+
+Mood:
+Strength, awe.
+
+[OUTRO — SHOT 9]
+Description:
+Narrator scene with soft background, moral text appears: “Devotion + Creative Problem Solving.”
+
+Camera:
+Simple centered frame.
+
+Mood:
+Warm, inspiring.

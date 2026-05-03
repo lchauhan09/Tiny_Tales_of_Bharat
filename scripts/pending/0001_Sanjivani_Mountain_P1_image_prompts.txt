@@ -1,0 +1,38 @@
+# IMAGE PROMPTS — Episode 0001: Sanjivani Mountain (Part 1)
+# Visual Theme: Mountain Night
+
+[SHOT 1 — INTRO]
+Prompt:
+"Moonlit battlefield, soft blue night sky, Rama kneeling beside Lakshmana, gentle expressions, warm glow, kid-friendly Indian mythological art style, soft outlines, calm atmosphere."
+
+[SHOT 2 — LAKSHMANA CLOSE-UP]
+Prompt:
+"Close-up of Lakshmana unconscious on the ground, Rama holding his hand, moonlight highlighting their faces, emotional but gentle tone, kid-friendly style."
+
+[SHOT 3 — HANUMAN STEPS FORWARD]
+Prompt:
+"Hanuman standing confidently, heroic pose, chest forward, determined eyes, moonlit battlefield behind him, soft shadows, child-friendly mythological illustration."
+
+[SHOT 4 — HANUMAN LEAPS]
+Prompt:
+"Hanuman growing in size and leaping into the sky, dust cloud below, dramatic upward motion, glowing moon behind him, dynamic kid-friendly action art."
+
+[SHOT 5 — HANUMAN FLYING]
+Prompt:
+"Hanuman flying across the night sky, clouds rushing past, moonlight outlining his figure, peaceful but urgent mood, vibrant kid-friendly colors."
+
+[SHOT 6 — MOUNTAIN ESTABLISHING]
+Prompt:
+"Glowing mountain filled with magical herbs, each herb shining in different colors, starry night sky, mystical atmosphere, wide establishing shot, child-friendly fantasy style."
+
+[SHOT 7 — HANUMAN THINKING]
+Prompt:
+"Hanuman examining glowing herbs with a confused expression, then smiling with an idea, medium shot, magical plants around him, soft moonlight."
+
+[SHOT 8 — HANUMAN LIFTS MOUNTAIN]
+Prompt:
+"Hanuman lifting the entire glowing mountain above his head, dramatic low-angle shot, starry sky, powerful but friendly expression, vibrant kid-friendly illustration."
+
+[SHOT 9 — OUTRO MORAL CARD]
+Prompt:
+"Simple warm background with soft stars, text space for moral, gentle golden glow, kid-friendly aesthetic, calm and inspiring mood."

@@ -1,29 +1,28 @@
 # Tiny Tales of Bharat 🕉️
 
-A semi-automated YouTube channel creating 6-minute, kid-friendly mythological videos from the Ramayana, Mahabharata, and Upanishads.
+A semi-automated YouTube channel creating 6-minute, kid-friendly mythological videos.
 
-## 📁 Folder Structure
+## 🚀 Setup
 
-- **`content/`**: The "brain" of the channel.
-  - `content_bible.json`: Character traits, canonical incidents, and morals.
-  - `episode_database.json`: Tracks every episode, part number, and status.
-  - `visuals/`: Character sheets and style references for consistent AI generation.
-- **`scripts/`**:
-  - `pending/`: Newly generated AI scripts awaiting review.
-  - `approved/`: Scripts ready for production.
-- **`automation/`**: Python scripts for generating content, storyboards, TTS, and video assembly.
-- **`videos/`**:
-  - `rough_cuts/`: Auto-generated drafts.
-  - `final/`: Polished videos ready for upload.
-- **`.github/workflows/`**: Automation pipeline (e.g., daily script generation).
+1.  **Install FFmpeg**: Run the installation script to set up FFmpeg locally:
+    ```powershell
+    # Run in PowerShell
+    ./automation/utils/install_ffmpeg.ps1
+    ```
+2.  **Add to Path**: Ensure the `tools/` directory is in your system's Environment Variables.
 
-## 🚀 Getting Started
+## 📁 Project Structure
 
-1. **Script Generation**: Scripts are auto-generated daily via GitHub Actions.
-2. **Review**: Check `scripts/pending/`, refine them, and move to `scripts/approved/`.
-3. **Production**: Use the scripts in `automation/` to generate assets and assemble the video.
+- **`automation/`**:
+  - `generate_script.py`: The "brain" that picks the next story.
+  - `generate_prompts.py`: Extracts image prompts.
+  - `assemble_video.py`: The master assembly script with logging, fallbacks, and progress tracking.
+- **`tools/`**: Local FFmpeg binaries.
+- **`videos/rough_cuts/`**: Output directory for generated drafts.
 
-## 🛠️ Tech Stack
-- **Logic**: Python
-- **Automation**: GitHub Actions
-- **AI**: Script generation, Image generation, TTS (planned)
+## ✨ Features
+
+- **Dynamic Pacing**: Video durations automatically match the narrator's speed.
+- **Robust Pipeline**: Automatic fallback images and placeholder intro/outro generation.
+- **Progress Tracking**: Real-time progress bars during assembly.
+- **Professional Logs**: Comprehensive logging in `automation/logs/assemble.log`.

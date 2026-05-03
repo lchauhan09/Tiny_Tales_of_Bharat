@@ -1,0 +1,48 @@
+2026-05-03 13:32:23,918 - INFO - Starting episode assembly...
+2026-05-03 13:32:23,918 - INFO - Generating fallback image...
+2026-05-03 13:32:23,918 - INFO - Running command: ffmpeg -y -f lavfi -i color=c=blue:s=1280x720:d=1 -vframes 1 automation/utils\fallback.png
+2026-05-03 13:33:05,575 - INFO - Starting episode assembly...
+2026-05-03 13:33:05,575 - INFO - Generating silent audio...
+2026-05-03 13:33:05,575 - INFO - Running command: ffmpeg -y -f lavfi -i anullsrc=r=44100:cl=stereo -t 1 automation/utils\silent.mp3
+2026-05-03 13:33:05,662 - INFO - Running command: ffmpeg -y -f concat -safe 0 -i videos/rough_cuts\images.txt -vsync vfr -pix_fmt yuv420p -vf scale=1280:720,format=yuv420p videos/rough_cuts\images_video.mp4
+2026-05-03 13:33:05,917 - WARNING - No audio files found. Generating silent track.
+2026-05-03 13:33:05,917 - INFO - Running command: ffmpeg -y -f lavfi -i anullsrc=r=44100:cl=stereo -t 10 videos/rough_cuts\audio_track.mp3
+2026-05-03 13:33:06,053 - INFO - Running command: ffmpeg -y -i videos/rough_cuts\images_video.mp4 -i videos/rough_cuts\audio_track.mp3 -filter_complex [1:a]volume=1.0[a1] -map 0:v -map 1:a -c:v libx264 -c:a aac -shortest videos/rough_cuts\0001_Sanjivani_Mountain_P1_roughcut_20260503_1333.mp4
+2026-05-03 13:33:06,118 - ERROR - Command failed with code 4294967274
+2026-05-03 13:33:06,118 - ERROR - Stderr: ffmpeg version 8.1-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60. 26.100 / 60. 26.100
+  libavcodec     62. 28.100 / 62. 28.100
+  libavformat    62. 12.100 / 62. 12.100
+  libavdevice    62.  3.100 / 62.  3.100
+  libavfilter    11. 14.100 / 11. 14.100
+  libswscale      9.  5.100 /  9.  5.100
+  libswresample   6.  3.100 /  6.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'videos/rough_cuts\images_video.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.100
+  Duration: 00:00:27.04, start: 0.000000, bitrate: 0 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1280x720 [SAR 1:1 DAR 16:9], 0 kb/s, 0.37 fps, 0.33 tbr, 12800 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc62.28.100 libx264
+Input #1, mp3, from 'videos/rough_cuts\audio_track.mp3':
+  Metadata:
+    encoder         : Lavf62.12.100
+  Duration: 00:00:10.00, start: 0.025057, bitrate: 128 kb/s
+  Stream #1:0: Audio: mp3 (mp3float), 44100 Hz, stereo, fltp, 128 kb/s, start 0.025057
+    Metadata:
+      encoder         : Lavc62.28
+[fc#0 @ 0000022cd2846e80] Filter 'volume:default' has output 0 (a1) unconnected
+Error binding filtergraph inputs/outputs: Invalid argument
+
+2026-05-03 13:33:20,693 - INFO - Running command: ffmpeg -y -f concat -safe 0 -i D:/Lokesh/GitHub/Tiny_Tales_of_Bharat/videos/rough_cuts/images.txt -vsync vfr -pix_fmt yuv420p -vf scale=1280:720,format=yuv420p D:/Lokesh/GitHub/Tiny_Tales_of_Bharat/videos/rough_cuts/images_video.mp4
+2026-05-03 13:33:20,922 - INFO - Running command: ffmpeg -y -f lavfi -i anullsrc=r=44100:cl=stereo -t 5 D:/Lokesh/GitHub/Tiny_Tales_of_Bharat/videos/rough_cuts/audio_track.mp3
+2026-05-03 13:33:21,009 - INFO - Running command: ffmpeg -y -i D:/Lokesh/GitHub/Tiny_Tales_of_Bharat/videos/rough_cuts/images_video.mp4 -i D:/Lokesh/GitHub/Tiny_Tales_of_Bharat/videos/rough_cuts/audio_track.mp3 -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 -shortest D:/Lokesh/GitHub/Tiny_Tales_of_Bharat/videos/rough_cuts/0001_Sanjivani_Mountain_P1_roughcut_20260503_1333.mp4
+2026-05-03 13:35:09,388 - INFO - Running command: ffmpeg -y -f concat -safe 0 -i D:/Lokesh/GitHub/Tiny_Tales_of_Bharat/videos/rough_cuts/images.txt -vsync vfr -pix_fmt yuv420p -vf scale=1280:720,format=yuv420p D:/Lokesh/GitHub/Tiny_Tales_of_Bharat/videos/rough_cuts/images_video.mp4
+2026-05-03 13:35:09,650 - INFO - Running command: ffmpeg -y -f lavfi -i anullsrc=r=44100:cl=stereo -t 5 D:/Lokesh/GitHub/Tiny_Tales_of_Bharat/videos/rough_cuts/audio_track.mp3
+2026-05-03 13:35:09,750 - INFO - Running command: ffmpeg -y -i D:/Lokesh/GitHub/Tiny_Tales_of_Bharat/videos/rough_cuts/images_video.mp4 -i D:/Lokesh/GitHub/Tiny_Tales_of_Bharat/videos/rough_cuts/audio_track.mp3 -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 -shortest D:/Lokesh/GitHub/Tiny_Tales_of_Bharat/videos/rough_cuts/0001_Sanjivani_Mountain_P1_roughcut_20260503_1335.mp4
