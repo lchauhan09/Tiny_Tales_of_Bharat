@@ -1,0 +1,18 @@
+# Episode 0003: Breaking the Bow (Part 1)
+# Character: Rama
+# Visual Theme: Royal Palace
+# Moral: Strength comes from discipline
+
+[INTRO - 30s]
+Narrator: Welcome back to Tiny Tales of Bharat! Today, we follow the brave Rama...
+
+[SCENE 1 - 2m]
+(Visual: Royal Palace)
+Narrator: In the heart of the story, Rama faces the challenge of Breaking the Bow...
+
+[CLIMAX - 2m]
+Narrator: With great courage, the goal is achieved!
+
+[OUTRO - 1m]
+Narrator: And that is how we learn that Strength comes from discipline. 
+Narrator: See you in the next tale!

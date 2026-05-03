@@ -46,3 +46,32 @@ Error binding filtergraph inputs/outputs: Invalid argument
 2026-05-03 13:35:09,388 - INFO - Running command: ffmpeg -y -f concat -safe 0 -i D:/Lokesh/GitHub/Tiny_Tales_of_Bharat/videos/rough_cuts/images.txt -vsync vfr -pix_fmt yuv420p -vf scale=1280:720,format=yuv420p D:/Lokesh/GitHub/Tiny_Tales_of_Bharat/videos/rough_cuts/images_video.mp4
 2026-05-03 13:35:09,650 - INFO - Running command: ffmpeg -y -f lavfi -i anullsrc=r=44100:cl=stereo -t 5 D:/Lokesh/GitHub/Tiny_Tales_of_Bharat/videos/rough_cuts/audio_track.mp3
 2026-05-03 13:35:09,750 - INFO - Running command: ffmpeg -y -i D:/Lokesh/GitHub/Tiny_Tales_of_Bharat/videos/rough_cuts/images_video.mp4 -i D:/Lokesh/GitHub/Tiny_Tales_of_Bharat/videos/rough_cuts/audio_track.mp3 -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 -shortest D:/Lokesh/GitHub/Tiny_Tales_of_Bharat/videos/rough_cuts/0001_Sanjivani_Mountain_P1_roughcut_20260503_1335.mp4
+2026-05-03 15:34:42,255 [WARNING] Missing image scripts/pending\images\shot1_intro.png, using fallback
+2026-05-03 15:34:42,350 [WARNING] Missing audio: scripts/pending\audio\intro_narrator.mp3, using 3.0s
+2026-05-03 15:34:42,350 [WARNING] Missing image scripts/pending\images\shot2_lakshmana.png, using fallback
+2026-05-03 15:34:42,350 [WARNING] Missing audio: scripts/pending\audio\scene1_narrator.mp3, using 3.0s
+2026-05-03 15:34:42,351 [WARNING] Missing image scripts/pending\images\shot3_hanuman_forward.png, using fallback
+2026-05-03 15:34:42,351 [WARNING] Missing audio: scripts/pending\audio\rama_line.mp3, using 3.0s
+2026-05-03 15:34:42,351 [WARNING] Missing image scripts/pending\images\shot4_hanuman_leap.png, using fallback
+2026-05-03 15:34:42,351 [WARNING] Missing audio: scripts/pending\audio\hanuman_line1.mp3, using 3.0s
+2026-05-03 15:34:42,351 [WARNING] Missing image scripts/pending\images\shot5_flying.png, using fallback
+2026-05-03 15:34:42,351 [WARNING] Missing audio: scripts/pending\audio\scene2_narrator.mp3, using 3.0s
+2026-05-03 15:34:42,351 [WARNING] Missing image scripts/pending\images\shot6_mountain.png, using fallback
+2026-05-03 15:34:42,351 [WARNING] Missing image scripts/pending\images\shot7_thinking.png, using fallback
+2026-05-03 15:34:42,351 [WARNING] Missing audio: scripts/pending\audio\hanuman_line2.mp3, using 3.0s
+2026-05-03 15:34:42,351 [WARNING] Missing image scripts/pending\images\shot8_lift.png, using fallback
+2026-05-03 15:34:42,351 [WARNING] Missing image scripts/pending\images\shot9_moral.png, using fallback
+2026-05-03 15:34:42,351 [WARNING] Missing audio: scripts/pending\audio\outro_narrator1.mp3, using 3.0s
+2026-05-03 15:34:42,354 [INFO] RUN: ffmpeg -y -f concat -safe 0 -i videos/rough_cuts\images.txt -vsync vfr -pix_fmt yuv420p videos/rough_cuts\images_raw.mp4
+2026-05-03 15:34:43,436 [INFO] RUN: ffmpeg -y -i videos/rough_cuts\images_raw.mp4 -vf scale=1280:720,zoompan=z='min(zoom+0.0015,1.05)':d=125,fade=t=in:st=0:d=0.5,fade=t=out:st=duration-0.5:d=0.5 -c:v libx264 -pix_fmt yuv420p videos/rough_cuts\images_video.mp4
+2026-05-03 15:36:34,805 [WARNING] Missing audio: scripts/pending\audio\intro_narrator.mp3, using 3.0s
+2026-05-03 15:36:34,806 [WARNING] Missing audio: scripts/pending\audio\scene1_narrator.mp3, using 3.0s
+2026-05-03 15:36:34,806 [WARNING] Missing audio: scripts/pending\audio\rama_line.mp3, using 3.0s
+2026-05-03 15:36:34,806 [WARNING] Missing audio: scripts/pending\audio\hanuman_line1.mp3, using 3.0s
+2026-05-03 15:36:34,806 [WARNING] Missing audio: scripts/pending\audio\scene2_narrator.mp3, using 3.0s
+2026-05-03 15:36:34,807 [WARNING] Missing audio: scripts/pending\audio\hanuman_line2.mp3, using 3.0s
+2026-05-03 15:36:34,808 [WARNING] Missing audio: scripts/pending\audio\outro_narrator1.mp3, using 3.0s
+2026-05-03 15:36:34,809 [INFO] RUN: ffmpeg -y -f concat -safe 0 -i videos/rough_cuts\images.txt -vsync vfr -pix_fmt yuv420p videos/rough_cuts\images_raw.mp4
+2026-05-03 15:36:35,030 [INFO] RUN: ffmpeg -y -i videos/rough_cuts\images_raw.mp4 -vf scale=1280:720,fade=t=in:st=0:d=0.5,fade=t=out:st=27.5:d=0.5 -c:v libx264 -pix_fmt yuv420p videos/rough_cuts\images_video.mp4
+2026-05-03 15:36:35,413 [INFO] RUN: ffmpeg -y -f concat -safe 0 -i videos/rough_cuts\audio.txt -acodec pcm_s16le videos/rough_cuts\narration.wav
+2026-05-03 15:36:35,604 [INFO] RUN: ffmpeg -y -i automation/utils/intro.mp4 -i videos/rough_cuts\images_video.mp4 -i automation/utils/outro.mp4 -i videos/rough_cuts\narration.wav -filter_complex [0:v][1:v][2:v]concat=n=3:v=1:a=0[vcat];[vcat]subtitles='scripts/pending/subtitles.srt':[vsub];[3:a]showwaves=s=1280x200:mode=line:colors=white[wave];[vsub][wave]vstack=inputs=2[vout] -map [vout] -map 3:a -c:v libx264 -c:a aac -shortest videos/rough_cuts\0001_Sanjivani_Mountain_P1_roughcut_20260503_1536.mp4

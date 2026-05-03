@@ -7,5 +7,41 @@
     "visual_theme": "Mountain Night",
     "status": "pending",
     "date_generated": "2026-05-03"
+  },
+  {
+    "episode_id": "0002",
+    "character": "Krishna",
+    "incident_canonical": "Kaliya Naag",
+    "part_number": 1,
+    "visual_theme": "River Morning",
+    "status": "pending",
+    "date_generated": "2026-05-03"
+  },
+  {
+    "episode_id": "0003",
+    "character": "Rama",
+    "incident_canonical": "Breaking the Bow",
+    "part_number": 1,
+    "visual_theme": "Royal Palace",
+    "status": "pending",
+    "date_generated": "2026-05-03"
+  },
+  {
+    "episode_id": "0004",
+    "character": "Ganesha",
+    "incident_canonical": "The Moon's Laughter",
+    "part_number": 1,
+    "visual_theme": "Starry Night",
+    "status": "pending",
+    "date_generated": "2026-05-03"
+  },
+  {
+    "episode_id": "0005",
+    "character": "Arjuna",
+    "incident_canonical": "The Eye of the Fish",
+    "part_number": 1,
+    "visual_theme": "Forest Training Ground",
+    "status": "pending",
+    "date_generated": "2026-05-03"
   }
 ]
