@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Logs
+automation/logs/
+*.log
+
+# Large Assets (Video/Audio/Images)
+# We ignore the actual generated content to keep the repo light
+videos/rough_cuts/
+videos/final/
+scripts/pending/images/
+scripts/pending/audio/
+*.mp4
+*.mp3
+*.wav
+*.png
+*.jpg
+*.jpeg
+
+# But we DON'T ignore style references or manual sheets
+!content/visuals/style_reference/
+!content/visuals/character_sheets/
+
+# Local Tools
+tools/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
