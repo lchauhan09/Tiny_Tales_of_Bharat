@@ -1,0 +1,18 @@
+# Episode 0001: Sanjivani Mountain (Part 1)
+# Character: Hanuman
+# Visual Theme: Mountain Night
+# Moral: Devotion and creative problem solving
+
+[INTRO - 30s]
+Narrator: Welcome back to Tiny Tales of Bharat! Today, we follow the brave Hanuman...
+
+[SCENE 1 - 2m]
+(Visual: Mountain Night)
+Narrator: In the heart of the story, Hanuman faces the challenge of Sanjivani Mountain...
+
+[CLIMAX - 2m]
+Narrator: With great courage, the goal is achieved!
+
+[OUTRO - 1m]
+Narrator: And that is how we learn that Devotion and creative problem solving. 
+Narrator: See you in the next tale!

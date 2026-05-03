@@ -1,0 +1,72 @@
+[
+  {
+    "character": "Hanuman",
+    "incident_canonical": "Sanjivani Mountain",
+    "incident_aliases": ["Dronagiri", "Lakshmana revival"],
+    "visual_theme": "Mountain Night",
+    "moral": "Devotion and creative problem solving"
+  },
+  {
+    "character": "Krishna",
+    "incident_canonical": "Kaliya Naag",
+    "incident_aliases": ["Yamuna Dance", "Serpent Taming"],
+    "visual_theme": "River Morning",
+    "moral": "Protection of the environment and courage"
+  },
+  {
+    "character": "Rama",
+    "incident_canonical": "Breaking the Bow",
+    "incident_aliases": ["Sita Swayamvar", "Shiva Dhanush"],
+    "visual_theme": "Royal Palace",
+    "moral": "Strength comes from discipline"
+  },
+  {
+    "character": "Ganesha",
+    "incident_canonical": "The Moon's Laughter",
+    "incident_aliases": ["Kuber's Feast", "Modak Lesson"],
+    "visual_theme": "Starry Night",
+    "moral": "Humility and inner beauty"
+  },
+  {
+    "character": "Arjuna",
+    "incident_canonical": "The Eye of the Fish",
+    "incident_aliases": ["Archery Test", "Concentration"],
+    "visual_theme": "Forest Training Ground",
+    "moral": "Single-minded focus"
+  },
+  {
+    "character": "Durga",
+    "incident_canonical": "Mahishasura Mardini",
+    "incident_aliases": ["Good over Evil"],
+    "visual_theme": "Battlefield Glow",
+    "moral": "Inner strength and courage"
+  },
+  {
+    "character": "Prahlad",
+    "incident_canonical": "The Pillar",
+    "incident_aliases": ["Narasimha Appearance", "Holi Origin"],
+    "visual_theme": "Palace Courtyard",
+    "moral": "Faith and conviction"
+  },
+  {
+    "character": "Shiva",
+    "incident_canonical": "The Neelkanth",
+    "incident_aliases": ["Churning of the Ocean", "Samudra Manthan"],
+    "visual_theme": "Icy Mountain Peak",
+    "moral": "Sacrifice for the greater good"
+  },
+  {
+    "character": "Dhruva",
+    "incident_canonical": "The North Star",
+    "incident_aliases": ["Forest Penance"],
+    "visual_theme": "Deep Forest Night",
+    "moral": "Perseverance and determination"
+  },
+  {
+    "character": "Nachiketa",
+    "incident_canonical": "Meeting Yama",
+    "incident_aliases": ["Three Boons", "Search for Truth"],
+    "visual_theme": "Gateway to Eternity",
+    "moral": "Curiosity and fearlessness"
+  }
+]
